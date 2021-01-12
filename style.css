@@ -1,11 +1,12 @@
 body {
   margin: auto 0;
+  font-family: 'Montserrat', sans-serif;
 }
 /* NAVBAR */
 .navbar {
   display: flex;
   list-style-type: none;
-  font-size: 0.6em;
+  font-size: 1em;
   margin: 0;
 }
 
@@ -22,24 +23,31 @@ body {
 }
 
 .navbar li a:hover {
-  background-color: teal;
+  background-color:#4cc5d8;
 }
 
 .navbar li:last-child {
   margin: 0 40px 0 auto;
 }
 
-@media all and (max-width: 500px) {
+.sticky-navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+@media all and (max-width: 600px) {
   .navbar {
     /* flex-flow: column wrap;
     padding: 0; */
-    font-size: 0.45em;
+    font-size: 0.8em;
     padding: 0;
   }
   .navbar li:last-child {
     margin: 0;
   }
-  
+
   /* .navbar li {
     text-align: center;
   } */
@@ -53,20 +61,25 @@ body {
   height: 80vh;
 }
 
+.cover-img {
+  width: 50vh;
+}
+
 /* GRID */
 .container-grid {
   display: grid;
-  gap: 20px;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 .container-grid > div > img {
-  width: 100%;
+  width: 75px;
+  margin: auto;
 }
 
 .container-grid > div {
   background-color: rgb(54, 50, 50);
-  padding: 110px;
   margin: 20px;
+  height: 300px;
+  display: flex;
 }
 .container-grid > div:hover {
   transform: scale(1.05);
@@ -99,6 +112,12 @@ footer {
   box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px,
     inset rgba(0, 0, 0, 0.15) 0px -10px 20px;
 }
+
+.bg-color {
+  background-color: #17a2b8;
+}
+
+
 
 /*https://paulund.co.uk/how-to-create-shiny-css-buttons*/
 /***********************************************************************
