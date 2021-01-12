@@ -29,11 +29,11 @@ body {
   margin: 0 40px 0 auto;
 }
 
-@media all and (max-width: 700px) {
+@media all and (max-width: 500px) {
   .navbar {
     /* flex-flow: column wrap;
     padding: 0; */
-    font-size: 0.48em;
+    font-size: 0.45em;
     padding: 0;
   }
   .navbar li:last-child {
